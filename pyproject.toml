@@ -1,0 +1,18 @@
+[project]
+name = "test-toolkit"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "cachetools>=5.5.0",
+    "fastapi[standard]>=0.115.5",
+    "uvicorn>=0.32.0",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.13.0",
+    "ruff>=0.7.4",
+    "types-cachetools>=5.5.0.20240820",
+]
